@@ -245,7 +245,7 @@ app.delete("/products/:id", (req, res) => {
   });
 });
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
   dbo.connectToServer(function (err) {
     if (err) console.error(err);
   });
